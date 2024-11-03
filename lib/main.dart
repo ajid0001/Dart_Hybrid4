@@ -2,10 +2,10 @@ import 'dart:convert' as convert;
 import 'package:http/http.dart' as http;
 
 void main() async {
-  await fetchAndPrintUserData();
+  await fetchUserData();
 }
 
-Future<void> fetchAndPrintUserData() async {
+Future<void> fetchUserData() async {
   var url = Uri.parse('https://random-data-api.com/api/v2/users?size=10');
 
   try {
